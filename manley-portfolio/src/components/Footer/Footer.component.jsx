@@ -7,10 +7,10 @@ import "./Footer.styles.css";
 export const Footer = () => (
   <div className="footer">
     <div className="rights">
-      <h2>Andrew Manley</h2>
+      <h4>Andrew Manley</h4>
       <span>© All rights are reserved | {new Date().getFullYear()}</span>
     </div>
-    <div>
+    <div className="socialLinks">
       {social.map(({ id, name, link, icon }) => (
         <a
           key={id}

@@ -1,0 +1,8 @@
+.intro{
+   font-size: 32pt;
+   font-weight: normal;
+}
+
+.intro > h1,h4{
+   margin: 0;
+}

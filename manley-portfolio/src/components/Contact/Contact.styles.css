@@ -1,7 +1,60 @@
 .input {
-   box-sizing: border-box;
-   border: 2px solid;
-   padding: 0.8rem 1rem;
-   border-radius: 7px;
-   margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #22286b;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  margin-bottom: 0.5rem;
+}
+
+.contactBody {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactForm input,
+textarea {
+  width: 100%;
+  max-width: 450px;
+  min-width: 300px;
+}
+
+.contactForm textarea{
+  height: 5vh;
+}
+
+.imgDiv {
+  width: 100%;
+  max-width: 600px;
+}
+.coderImg {
+  width: 100%;
+  height: auto;
+}
+
+.contactButton{
+  font-size: 12px;
+  padding: 12px 28px;
+  border: 2px solid;
+  border-radius: 7px;
+  border-color: #22286b;
+}
+
+@media all and (max-width: 1050px) {
+  .contactBody {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contactForm {
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }

@@ -4,12 +4,11 @@ import { Navbar } from "./Navbar/Navbar.component.jsx"
 
 import "./Header.styles.css"
 
-export const Header = () => {
-  // const [sidebar, toggle] = useState(false);
+export const Header = ({open,setOpen}) => {
   return (
     <div className="header">
-      <Link to="/">MANLEY WEB DEV</Link>
-      <Navbar />
+      <Link id="logo" to="/">MANLEY WEB DEV</Link>
+      <Navbar open={open} setOpen={setOpen}/>
     </div>
   )
 }

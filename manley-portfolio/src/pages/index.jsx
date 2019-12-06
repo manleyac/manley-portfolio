@@ -1,26 +1,37 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 
-import { HomePage } from "../components/HomePage/HomePage.component.jsx"
-import { Header } from "../components/Header/Header.component.jsx"
-import { Intro } from "../components/Intro/Intro.component.jsx"
-import { Blog } from "../components/Blog/Blog.component.jsx"
-import { Projects } from "../components/Projects/Projects.component.jsx"
-import { About } from "../components/About/About.component.jsx"
-import { Contact } from "../components/Contact/Contact.component.jsx"
-import { Footer } from "../components/Footer/Footer.component.jsx"
+import {PageHead} from "../components/Helmet/Helmet.component.jsx";
+import { HomePage } from "../components/HomePage/HomePage.component.jsx";
+import { Intro } from "../components/Intro/Intro.component.jsx";
+import { BlogPreview } from "../components/Blog/BlogPreview.component.jsx";
+import { Projects } from "../components/Projects/Projects.component.jsx";
+import { About } from "../components/About/About.component.jsx";
+import { Contact } from "../components/Contact/Contact.component.jsx";
 
 import "./app.styles.css"
 
-export default () => (
-  <div className="app">
-    <HomePage>
-      <Header />
-      <Intro />
-      <Blog />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </HomePage>
-  </div>
-)
+export default () => {
+  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    const listener = () => {
+      setOpen(false);
+    }
+    window.addEventListener('scroll', listener);
+    return () => {
+      window.removeEventListener('scroll', listener);
+    };
+  }, [])
+
+  return (
+    <div className="app footerBackground">
+      <PageHead/>
+      <HomePage open={open} setOpen={setOpen} styleClass="columnSpace">
+        <Intro />
+        <BlogPreview />
+        <Projects />
+        <About />
+        <Contact />
+      </HomePage>
+    </div>
+  )
+}

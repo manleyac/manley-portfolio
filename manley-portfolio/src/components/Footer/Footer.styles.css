@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 1vh;
 }
 
 .rights {
@@ -9,7 +10,12 @@
   align-items: flex-end;
 }
 
-.rights h2 {
+.rights h4 {
   margin-bottom: 0px;
   margin-right: 8px;
+}
+
+
+.socialLinks a{
+  margin-left: .5em;
 }
