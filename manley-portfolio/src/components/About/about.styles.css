@@ -1,4 +1,21 @@
-.responsiveImg {
-   width:100%;
-   height: auto;
+.aboutBody {
+  display: flex;
+}
+
+.aboutText {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+@media all and (max-width: 1050px) {
+  .aboutBody {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .aboutText {
+    width: 75%;
+  }
 }

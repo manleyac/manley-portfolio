@@ -1,7 +1,7 @@
 .input {
   box-sizing: border-box;
   border: 2px solid;
-  border-color: #22286b;
+  border-color: #094067;
   padding: 0.8rem 1rem;
   border-radius: 7px;
   margin-bottom: 0.5rem;
@@ -40,10 +40,12 @@ textarea {
 
 .contactButton{
   font-size: 12px;
+  color: #fffffe;
   padding: 12px 28px;
   border: 2px solid;
   border-radius: 7px;
-  border-color: #22286b;
+  border-color: #094067;
+  background-color: #3da9fc;
 }
 
 @media all and (max-width: 1050px) {

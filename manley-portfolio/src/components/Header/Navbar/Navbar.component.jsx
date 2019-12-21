@@ -7,15 +7,23 @@ import { Link } from "gatsby"
 
 import "./Navbar.styles.css"
 
-export const Navbar = ({open,setOpen}) => {
+export const Navbar = () => {
   
-  const [isSmallScreen, setIsSmallScreen] = useState(false)
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 700px)")
-    mediaQuery.addListener(handleMediaQueryChange)
-    handleMediaQueryChange(mediaQuery)
-  })
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+    const listener = () => {
+      setOpen(false)
+    }
+    window.addEventListener("scroll", listener)
+    return () => {
+      window.removeEventListener("scroll", listener)
+    }
+  },[])
 
   const handleMediaQueryChange = mediaQuery => {
     if (mediaQuery.matches) {
@@ -23,10 +31,6 @@ export const Navbar = ({open,setOpen}) => {
     } else {
       setIsSmallScreen(false)
     }
-  }
-
-  const toggleNav = () => {
-    setOpen(!open)
   }
 
   const largeScreen = () => (

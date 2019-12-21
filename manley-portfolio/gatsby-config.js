@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    icon: `./public/favicon_io-1/favicon-32x32.png`,
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     {

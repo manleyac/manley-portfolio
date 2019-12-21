@@ -7,19 +7,19 @@ import "./Menu.styles.css";
 export const Menu = ({ open }) => {
   return (
     <nav open={open} className={`${open ? "openStyle" : "closedStyle"}`}>
-      <Link className="navlink navFirstL" to="/blog">
+      <Link className="menuLink navFirstL" to="/blog">
         Blog
       </Link>
 
-      <AnchorLink className="navlink" href="#projects">
+      <AnchorLink className="menuLink" href="#projects">
         Projects
       </AnchorLink>
 
-      <AnchorLink className="navlink" href="#about">
+      <AnchorLink className="menuLink" href="#about">
         About
       </AnchorLink>
 
-      <AnchorLink className="navlink" href="#contact">
+      <AnchorLink className="menuLink" href="#contact">
         Contact
       </AnchorLink>
     </nav>

@@ -6,7 +6,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 25vw;
+  width: 40vw;
   background-color: rgba(125,194,255,0.5);
 }
 
@@ -17,4 +17,12 @@
 
 .closedStyle {
   display: none;
+}
+
+.menuLink {
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #ef4565;
+  text-decoration: none;
+  margin-left: 1rem;
 }

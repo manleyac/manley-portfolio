@@ -5,9 +5,9 @@ import { Footer } from "../Footer/Footer.component.jsx"
 
 import "./HomePage.styles.css"
 
-export const HomePage = ({ children, styleClass, open, setOpen }) => (
+export const HomePage = ({ children, styleClass}) => (
   <div className={`homepage ${styleClass}`}>
-    <Header open={open} setOpen={setOpen} />
+    <Header/>
     {children}
     <Footer/>
   </div>

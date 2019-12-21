@@ -1,8 +1,33 @@
-.intro{
-   font-size: 32pt;
-   font-weight: normal;
+.intro {
+  margin-top: 2vh;
+  font-size: 32pt;
+  font-weight: normal;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.intro > h1,h4{
-   margin: 0;
+
+
+/* .introText {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.introH {
+  margin: none;
+}
+
+.introImgDiv {
+  width: 50%;
+}
+
+.introImg {
+  width: 100%;
+  max-width: 600px;
+  align-self: flex-end;
+} */
+
+@media all and (max-width: 1050px) {
+  
 }
