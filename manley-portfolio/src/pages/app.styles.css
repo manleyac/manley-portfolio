@@ -31,7 +31,7 @@ p {
 }
 
 .footerBackground {
-  background-image: url("../../public/images/wave.svg");
+  background-image: url("../../src/images/wave.svg");
   background-repeat: no-repeat;
   background-position: bottom;
 }

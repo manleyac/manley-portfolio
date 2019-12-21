@@ -1,5 +1,5 @@
 import React from "react"
-import builder from "../../../public/images/builder.svg"
+import builder from "../../images/builder.svg"
 
 import "./about.styles.css"
 

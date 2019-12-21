@@ -1,5 +1,5 @@
 import React from "react";
-import reader from "../../../public/images/reader.svg";
+import reader from "../../images/reader.svg";
 import "./Intro.styles.css";
 
 export const Intro = () => (

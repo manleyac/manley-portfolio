@@ -1,5 +1,5 @@
 import React from "react"
-import coder from "../../../public/images/coder.svg"
+import coder from "../../images/coder.svg";
 import "./Contact.styles.css"
 
 export const Contact = () => (
