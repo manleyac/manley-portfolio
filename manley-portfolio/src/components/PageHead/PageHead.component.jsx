@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import favicon16 from "../../../public/favicon_io-1/favicon-16x16.png"
-import favicon32 from "../../../public/favicon_io-1/favicon-32x32.png"
+import favicon16 from "../../favicon_io-1/favicon-16x16.png";
+import favicon32 from "../../favicon_io-1/favicon-32x32.png"
 
 export const PageHead = () => (
   <Helmet>
