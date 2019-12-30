@@ -1,8 +1,9 @@
 import React from "react"
 
-import social from "./social.json"
+import github from "./icons/github.svg";
+import twitter from "./icons/twitter.svg";
 
-import "./Footer.styles.css";
+import "./Footer.styles.css"
 
 export const Footer = () => (
   <div className="footer">
@@ -11,17 +12,22 @@ export const Footer = () => (
       <span>© All rights are reserved | {new Date().getFullYear()}</span>
     </div>
     <div className="socialLinks">
-      {social.map(({ id, name, link, icon }) => (
         <a
-          key={id}
-          href={link}
+          href="https://github.com/manleyac"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`follow me on ${icon}`}
+          aria-label={`follow me on github`}
         >
-          <img width="24" src={icon} alt={name} />
+          <img width="24" src={github} alt="github" />
         </a>
-      ))}
+        <a
+          href="https://twitter.com/DevManley"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`follow me on twitter`}
+        >
+          <img width="24" src={twitter} alt="twitter" />
+        </a>
     </div>
   </div>
 )
