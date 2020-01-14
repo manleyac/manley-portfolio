@@ -1,0 +1,13 @@
+.blogBody {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.blogIntroP {
+   font-size: 1.5em;
+}
+
+.blogPostTitle  a{
+   color: #3da9fc;
+   font-style: none;
+}

@@ -18,7 +18,7 @@ export const Footer = () => (
           rel="noopener noreferrer"
           aria-label={`follow me on github`}
         >
-          <img width="24" src={github} alt="github" />
+          <img width="30" src={github} alt="github" />
         </a>
         <a
           href="https://twitter.com/DevManley"
@@ -26,7 +26,7 @@ export const Footer = () => (
           rel="noopener noreferrer"
           aria-label={`follow me on twitter`}
         >
-          <img width="24" src={twitter} alt="twitter" />
+          <img width="30" src={twitter} alt="twitter" />
         </a>
     </div>
   </div>

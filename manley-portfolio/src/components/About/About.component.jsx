@@ -14,9 +14,7 @@ export const About = () => (
           ever changing environment.
         </p>
       </div>
-      <div className="imgDiv">
-        <img src={builder} className="coderImg" />
-      </div>
+      <img src={builder} className="coderImg" />
     </div>
   </div>
 )

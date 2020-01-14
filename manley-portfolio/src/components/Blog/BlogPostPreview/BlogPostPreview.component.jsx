@@ -24,7 +24,7 @@ export const BlogPostPreview = () => {
       {posts.map(post => {
         return (
           <div className="blog-post-preview" key={post.id}>
-            <h3>
+            <h3 className="blogPostTitle">
               <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
             </h3>
             <h5>{post.frontmatter.date}</h5>

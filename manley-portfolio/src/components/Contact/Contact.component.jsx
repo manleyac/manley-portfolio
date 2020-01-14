@@ -46,7 +46,7 @@ export const Contact = () => (
         </p>
       </form>
       <div className="imgDiv">
-        <img className="coderImg" src={coder} />
+        <img className="contactImg" src={coder} />
       </div>
     </div>
   </div>

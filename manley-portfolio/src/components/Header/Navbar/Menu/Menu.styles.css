@@ -24,5 +24,7 @@
   font-size: 1.5em;
   color: #ef4565;
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
 }
