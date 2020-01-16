@@ -1,5 +1,5 @@
 import React from "react"
-import coder from "../../images/coder.svg";
+import coder from "../../images/coder.svg"
 import "./Contact.styles.css"
 
 export const Contact = () => (
@@ -42,12 +42,13 @@ export const Contact = () => (
           </label>
         </p>
         <p>
-          <button className="contactButton" type="submit">Send</button>
+          <button className="contactButton" type="submit">
+            Send
+          </button>
         </p>
       </form>
-      <div className="imgDiv">
-        <img className="contactImg" src={coder} />
-      </div>
+      <img className="contactImg" src={coder} viewBox="0 0 600 425" 
+      preserveAspectRatio="xMidYMid"/>
     </div>
   </div>
 )
