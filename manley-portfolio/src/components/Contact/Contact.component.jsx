@@ -3,12 +3,11 @@ import coder from "../../images/coder.svg"
 import "./Contact.styles.css"
 
 export const Contact = () => (
-  <div>
+  <div name="contact">
     <h1>Contact Me</h1>
     <div className="contactBody">
       <form
         className="contactForm"
-        name="contact"
         method="POST"
         data-netlify="true"
       >

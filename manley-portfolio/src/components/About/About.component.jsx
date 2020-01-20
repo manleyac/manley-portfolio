@@ -4,8 +4,8 @@ import builder from "../../images/builder.svg"
 import "./about.styles.css"
 
 export const About = () => (
-  <div>
-    <h1>About</h1>
+  <div name="about">
+    <h1 >About</h1>
     <div className="aboutBody">
       <div className="aboutText">
         <p>

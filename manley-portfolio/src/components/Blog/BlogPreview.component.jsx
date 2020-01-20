@@ -11,7 +11,7 @@ export const BlogPreview = () => (
     <div className="blogBody">
       <p className="blogIntroP">Check out posts I write now and then about interesting topics.</p>
       <BlogPostPreview />
-      <Link to="./blog">
+      <Link to="blog">
         <h4>See All</h4>
       </Link>
     </div>
