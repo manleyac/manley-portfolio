@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
 
 import "./Menu.styles.css";
@@ -7,21 +6,21 @@ import "./Menu.styles.css";
 export const Menu = ({ open }) => {
   return (
     <nav open={open} className={`${open ? "openStyle" : "closedStyle"}`}>
-      <Link className="menuLink navFirstL" to="/blog">
+      <Link className="menuLink navFirstL" to="blog">
         Blog
       </Link>
 
-      <AnchorLink className="menuLink" href="#projects">
+      <Link className="menuLink" to="#projects">
         Projects
-      </AnchorLink>
+      </Link>
 
-      <AnchorLink className="menuLink" href="#about">
+      <Link className="menuLink" to="#about">
         About
-      </AnchorLink>
+      </Link>
 
-      <AnchorLink className="menuLink" href="#contact">
+      <Link className="menuLink" to="#contact">
         Contact
-      </AnchorLink>
+      </Link>
     </nav>
   )
 }

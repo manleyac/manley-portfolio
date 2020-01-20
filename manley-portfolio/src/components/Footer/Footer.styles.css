@@ -25,4 +25,6 @@
 
 .socialLinks a {
   margin-left: 0.5em;
+  margin-bottom: 0;
+  align-items: flex-end;
 }

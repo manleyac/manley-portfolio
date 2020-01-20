@@ -1,6 +1,8 @@
-import React from "react"
+import React from "react";
+
 import { Link, graphql } from "gatsby"
 import { HomePage } from "../components/HomePage/HomePage.component.jsx"
+import { PageHead } from "../components/PageHead/PageHead.component.jsx"
 
 import "./app.styles.css"
 
@@ -8,6 +10,7 @@ export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
    <div className="app">
+     <PageHead />
       <HomePage>
         <div className="blog-posts">
           {posts

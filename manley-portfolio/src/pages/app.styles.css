@@ -35,3 +35,9 @@ p {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
+@media all and (max-width: 600px) {
+  .footerBackground {
+    background-size: 600px;
+  }
+}

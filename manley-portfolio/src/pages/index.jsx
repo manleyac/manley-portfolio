@@ -17,9 +17,9 @@ export default () => {
       <HomePage styleClass="columnSpace">
         <Intro />
         <BlogPreview />
-        <Projects />
-        <About />
-        <Contact />
+        <Projects id="projects" />
+        <About id="about" />
+        <Contact id="contact" />
       </HomePage>
     </div>
   )

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Burger } from "./Burger/Burger.component.jsx"
 import { Menu } from "./Menu/Menu.component.jsx"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Link } from "gatsby"
 
 
@@ -35,21 +34,21 @@ export const Navbar = () => {
 
   const largeScreen = () => (
     <div className="">
-      <Link className="navlink" to="/blog">
+      <Link className="navlink" to="blog">
         Blog
       </Link>
 
-      <AnchorLink className="navlink" href="#projects">
+      <Link className="navlink" to="#projects">
         Projects
-      </AnchorLink>
+      </Link>
 
-      <AnchorLink className="navlink" href="#about">
+      <Link className="navlink" to="#about">
         About
-      </AnchorLink>
+      </Link>
 
-      <AnchorLink className="navlink" href="#contact">
+      <Link className="navlink" to="#contact">
         Contact
-      </AnchorLink>
+      </Link>
     </div>
   )
 
