@@ -9,9 +9,9 @@ import "./app.styles.css"
 export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-   <div className="app">
+   <div className="app footerBackground">
      <PageHead />
-      <HomePage>
+      <HomePage styleClass="blogPage">
         <div className="blog-posts">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)

@@ -36,6 +36,18 @@ p {
   background-position: bottom;
 }
 
+.blogPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-posts{
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+}
+
 @media all and (max-width: 600px) {
   .footerBackground {
     background-size: 600px;
