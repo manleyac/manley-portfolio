@@ -13,6 +13,7 @@ export const BlogPostPreview = () => {
           frontmatter {
             title
             date
+            path
           }
         }
       }
