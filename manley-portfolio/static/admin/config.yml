@@ -2,29 +2,28 @@ backend:
   name: github
   repo: manleyac/manley-portfolio
 
-media_folder: static/assets
-public_folder: assets
+media_folder: manley-portfolio/src/images
+public_folder: manley-portfolio/src/images
 
 collections:
   - name: blog
     label: Blog
-    folder: src/blog/markdown-pages
+    folder: manley-portfolio/src/blog/markdown-pages
     create: true
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title, widget: string }
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - { label: "Featured Image", name: "featuredimage", widget: image }
       - { name: body, label: Body, widget: markdown }
   - name: projects
     label: Projects
-    folder: src/projects
+    folder: manley-portfolio/src/projects
     create: true
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title, widget: string }
-      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - { label: "Featured Image", name: "featuredimage", widget: image }
       - { name: body, label: Body, widget: markdown }
-      - {name: deploy, label: Deployed, widget: string}
-      - {name: repo, label: Repo, widget: string }
+      - { name: deploy, label: Deployed, widget: string }
+      - { name: repo, label: Repo, widget: string }
