@@ -8,5 +8,6 @@ This site is built using using [Gatsby](https://www.gatsbyjs.org/), a static sit
 
 ### Why Gatsby?
 
-
 ### Why Netlify
+
+\#### p.s. Kristian is really cool
