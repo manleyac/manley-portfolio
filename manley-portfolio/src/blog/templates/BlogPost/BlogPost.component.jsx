@@ -5,6 +5,7 @@ import { HomePage } from "../../../components/HomePage/HomePage.component.jsx";
 import {PageHead} from "../../../components/PageHead/PageHead.component.jsx";
 
 import "../../../pages/app.styles.css";
+import "./BlogPost.styles.css";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -14,7 +15,7 @@ export default function Template({
   return (
     <div className="app footerBackground">
       <PageHead />
-      <HomePage>
+      <HomePage styleClass="blogPage">
         <div className="blog-post-container">
           <div className="blog-post">
             <h1>{frontmatter.title}</h1>
