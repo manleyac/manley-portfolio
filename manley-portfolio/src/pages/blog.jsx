@@ -18,11 +18,11 @@ export default function Blog({ data }) {
             .map(({ node: post }) => {
               return (
                 <div className="blog-post-preview" key={post.id}>
-                  <h3>
+                  <h2>
                     <Link to={post.frontmatter.path}>
                       {post.frontmatter.title}
                     </Link>
-                  </h3>
+                  </h2>
                   <h5>{post.frontmatter.date}</h5>
                 </div>
               )

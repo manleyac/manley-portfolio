@@ -49,6 +49,20 @@ p {
   height: 100%;
 }
 
+.blog-posts a {
+  color: #3da9fc;
+  font-style: none;
+}
+
+.blog-posts h2 {
+  margin-bottom: .5vh;
+}
+
+.blog-posts h5 {
+  margin-top: 0;
+  margin-bottom: 1.5vh;
+}
+
 @media all and (max-width: 600px) {
   .footerBackground {
     background-size: 600px;

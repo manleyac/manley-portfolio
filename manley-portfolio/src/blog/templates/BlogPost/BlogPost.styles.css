@@ -11,3 +11,8 @@
   margin-bottom: 0;
   height: 100%;
 }
+
+.blog-post-img {
+  width: 100%;
+  height: auto;
+}
