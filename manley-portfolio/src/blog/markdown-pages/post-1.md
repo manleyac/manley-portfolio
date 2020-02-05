@@ -1,8 +1,8 @@
 ---
 path: /blog/my-first-post
-date: '2019-12-20'
+date: 2020-02-01T05:00:00.000Z
 title: How I Built This Site
-featuredimage: manley-portfolio/src/images/builder.svg
+image: manley-portfolio/src/images/gatsby-netlify.png
 ---
 This site is built using using [Gatsby](https://www.gatsbyjs.org/), a static site generator, and connected to [Netlify](https://www.netlifycms.org/), a Content Management System.
 
@@ -10,4 +10,3 @@ This site is built using using [Gatsby](https://www.gatsbyjs.org/), a static sit
 
 ### Why Netlify
 
-\#### p.s. Kristian is really cool
