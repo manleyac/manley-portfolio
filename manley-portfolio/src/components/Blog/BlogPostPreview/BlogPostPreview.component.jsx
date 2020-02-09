@@ -12,7 +12,7 @@ export const BlogPostPreview = () => {
           id
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             path
           }
         }

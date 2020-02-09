@@ -1,17 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { HomePage } from "../../../components/HomePage/HomePage.component.jsx";
-import {PageHead} from "../../../components/PageHead/PageHead.component.jsx";
+import { HomePage } from "../../../components/HomePage/HomePage.component.jsx"
+import { PageHead } from "../../../components/PageHead/PageHead.component.jsx"
 
-import "../../../pages/app.styles.css";
-import "./BlogPost.styles.css";
+import "../../../pages/app.styles.css"
+import "./BlogPost.styles.css"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  const relativeImg = String(frontmatter.image.split("/").slice(-1))
   return (
     <div className="app footerBackground">
       <PageHead />
@@ -20,7 +21,9 @@ export default function Template({
           <div className="blog-post">
             <h1>{frontmatter.title}</h1>
             <h2>{frontmatter.date}</h2>
-            <div className="blog-post-img"></div>
+            <div className="">
+              <img className="blog-post-img" src={require("../../../images/" + relativeImg)} />
+            </div>
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -39,6 +42,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        image
       }
     }
   }
