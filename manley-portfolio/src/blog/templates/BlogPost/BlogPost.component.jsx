@@ -20,7 +20,7 @@ export default function Template({
         <div className="blog-post-container">
           <div className="blog-post">
             <h1>{frontmatter.title}</h1>
-            <h2>{frontmatter.date}</h2>
+            <h4>{frontmatter.date}</h4>
             <div className="">
               <img className="blog-post-img" src={require("../../../images/" + relativeImg)} />
             </div>

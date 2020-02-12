@@ -15,3 +15,12 @@
   width: 100%;
   height: auto;
 }
+
+.blog-post a {
+  color: #3da9fc;
+   font-style: none;
+}
+
+.blog-post-content {
+  font-size: 1.25em;
+}
