@@ -12,7 +12,19 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  const relativeImg = String(frontmatter.image.split("/").slice(-1))
+  const isImage = () => {
+    if (frontmatter.image) {
+      const relativeImg = String(frontmatter.image.split("/").slice(-1));
+      return (
+        <img
+          className="blog-post-img"
+          src={require("../../../images/" + relativeImg)}
+        />
+      )
+    } else {
+      return <div></div>
+    }
+  }
   return (
     <div className="app footerBackground">
       <PageHead />
@@ -21,9 +33,7 @@ export default function Template({
           <div className="blog-post">
             <h1>{frontmatter.title}</h1>
             <h4>{frontmatter.date}</h4>
-            <div className="">
-              <img className="blog-post-img" src={require("../../../images/" + relativeImg)} />
-            </div>
+            <div className="">{isImage()}</div>
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
