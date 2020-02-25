@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 import { Link, graphql } from "gatsby"
 import { HomePage } from "../components/HomePage/HomePage.component.jsx"
@@ -9,8 +9,8 @@ import "./app.styles.css"
 export default function Blog({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-   <div className="app footerBackground">
-     <PageHead />
+    <div className="app footerBackground">
+      <PageHead />
       <HomePage styleClass="blogPage">
         <div className="blog-posts">
           {posts
@@ -29,13 +29,16 @@ export default function Blog({ data }) {
             })}
         </div>
       </HomePage>
-   </div>
+    </div>
   )
 }
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 250)

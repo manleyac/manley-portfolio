@@ -6,6 +6,7 @@ export const BlogPostPreview = () => {
     query MyQuery {
       allMarkdownRemark(
         sort: { fields: frontmatter___date, order: DESC }
+        filter: {fileAbsolutePath: {regex: "/blog/"}}
         limit: 3
       ) {
         nodes {
@@ -19,7 +20,7 @@ export const BlogPostPreview = () => {
       }
     }
   `)
-  const { nodes: posts } = data.allMarkdownRemark
+  const { nodes: posts } = data.allMarkdownRemark;
   return (
     <div className="blog-posts">
       {posts.map(post => {

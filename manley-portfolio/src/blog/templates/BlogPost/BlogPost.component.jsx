@@ -7,14 +7,12 @@ import { PageHead } from "../../../components/PageHead/PageHead.component.jsx"
 import "../../../pages/app.styles.css"
 import "./BlogPost.styles.css"
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+export default function Template({ data }) {
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const isImage = () => {
     if (frontmatter.image) {
-      const relativeImg = String(frontmatter.image.split("/").slice(-1));
+      const relativeImg = String(frontmatter.image.split("/").slice(-1))
       return (
         <img
           className="blog-post-img"
@@ -50,7 +48,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        path
         title
         image
       }
