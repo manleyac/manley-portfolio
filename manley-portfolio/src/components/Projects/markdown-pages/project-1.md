@@ -1,13 +1,10 @@
 ---
-path: /blog/project-1
-title: Project 1
-image: manley-portfolio/src/images/github-octocat.png
-deploy: project.org
-repo: https://github.com
+title: Pokemon Guide
+image: manley-portfolio/src/images/pikachu.png
+deploy: 'https://manleyac.github.io/pokemon-app/'
+repo: 'https://github.com/manleyac/pokemon-app'
 tags:
-  - Javascript
   - React
-  - ""
+  - PokeAPI
 ---
-
-First Sample Project for site
+This React app displays the original 150 Pokemon and their stats from PokeAPI
