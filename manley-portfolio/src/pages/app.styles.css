@@ -43,8 +43,8 @@ p {
 
 .blog-posts{
   align-self: flex-start;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 0%;
+  margin-right: 0%;
   margin-bottom: 0;
   height: 100%;
 }
@@ -61,6 +61,11 @@ p {
 .blog-posts h5 {
   margin-top: 0;
   margin-bottom: 1.5vh;
+}
+
+.blog-post-link {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media all and (max-width: 600px) {
