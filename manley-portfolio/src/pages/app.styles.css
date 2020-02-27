@@ -47,6 +47,7 @@ p {
   margin-right: 0%;
   margin-bottom: 0;
   height: 100%;
+  width: 100%;
 }
 
 .blog-posts a {
@@ -64,8 +65,8 @@ p {
 }
 
 .blog-post-link {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media all and (max-width: 600px) {
