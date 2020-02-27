@@ -1,12 +1,11 @@
 ---
-
-title: Project 2
+title: Stock Tracker
 image: manley-portfolio/src/images/github-octocat.png
 deploy: project.org
-repo: github.com
+repo: 'https://github.com/manleyac/stock-tracker/'
 tags:
-  - HTML
-  - CSS
+  - React
+  - NodeJS
+  - MongoDB
 ---
-
-This is the second example project
+A web app to track and evaluate equities
