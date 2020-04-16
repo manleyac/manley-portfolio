@@ -7,7 +7,7 @@ tags:
   - PostgrSQL
   - Express
   - React
-  - Node
+  - Node.js
 order: 2
 ---
 
