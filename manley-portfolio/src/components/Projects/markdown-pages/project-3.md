@@ -1,11 +1,13 @@
 ---
-title: Project 3
-image: manley-portfolio/src/images/github-octocat.png
-deploy: project.org
-repo: github.com
+title: Todo List
+image: manley-portfolio/src/images/clip-list-is-empty-c.png
+deploy: 'https://github.com/manleyac/pern-todo'
+repo: 'https://github.com/manleyac/pern-todo'
 tags:
-  - Python
-  - matplotlib
+  - PostgrSQL
+  - Express
+  - React
+  - Node
 ---
 
-This is the third example project
+A todo list app built using the PERN stack.
