@@ -8,6 +8,7 @@ tags:
   - Express
   - React
   - Node
+order: 2
 ---
 
 A todo list app built using the PERN stack.
