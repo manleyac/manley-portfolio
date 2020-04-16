@@ -27,3 +27,9 @@ collections:
       - { name: deploy, label: Deployed, widget: string }
       - { name: repo, label: Repo, widget: string }
       - { label: "Tags", name: "tags", widget: "list" }
+      - {
+          label: "Display Order",
+          name: "order",
+          widget: "number",
+          valueType: "int",
+        }
