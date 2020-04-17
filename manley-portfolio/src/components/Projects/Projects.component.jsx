@@ -19,6 +19,7 @@ export const Projects = () => {
               repo
               tags
               title
+              order
             }
           }
         }
@@ -26,19 +27,46 @@ export const Projects = () => {
     }
   `)
   const projects = data.allMarkdownRemark.edges
+  const projectList = []
+  for (let i = 0; i < projects.length; i++) {
+    let project = projects[i]
+    projectList.push({
+      title: project.node.frontmatter.title,
+      image: project.node.frontmatter.image,
+      deploy: project.node.frontmatter.deploy,
+      repo: project.node.frontmatter.repo,
+      tags: project.node.frontmatter.tags,
+      order: project.node.frontmatter.order,
+      body: project.node.html,
+    })
+  }
+
+  const compare = (a, b) => {
+    let comparison = 0
+    if (a.order > b.order) {
+      comparison = 1
+    } else {
+      comparison = -1
+    }
+    return comparison
+  }
+
+  projectList.sort(compare)
+  console.log(projectList)
   return (
     <div name="projects">
       <h1>Projects</h1>
       <div className="projects-collection">
-        {projects.map(({ node }) => {
+        {projectList.map((project) => {
           return (
             <ProjectCard
-              title={node.frontmatter.title}
-              image={node.frontmatter.image}
-              deploy={node.frontmatter.deploy}
-              repo={node.frontmatter.repo}
-              tags={node.frontmatter.tags}
-              body={node.html}
+              title={project.title}
+              image={project.image}
+              deploy={project.deploy}
+              repo={project.repo}
+              tags={project.tags}
+              order={project.order}
+              body={project.body}
             />
           )
         })}

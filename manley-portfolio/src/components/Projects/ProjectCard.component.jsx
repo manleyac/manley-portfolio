@@ -1,6 +1,6 @@
 import React from "react"
 
-import github from "../Footer/icons/github.svg";
+//icon imports
 import {IoIosGlobe} from "react-icons/io";
 import {FaGithub} from "react-icons/fa";
 
@@ -9,7 +9,7 @@ import "./ProjectCard.styles.css"
 export const ProjectCard = props => {
   const relativeImg = String(props.image.split("/").slice(-1))
   return (
-    <div className="project-card">
+    <div id={props.order} className="project-card">
       <div className="card-img-div">
         <img
           className="card-image"
