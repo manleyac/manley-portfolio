@@ -1,6 +1,6 @@
 ---
 path: /blog/How-I-Built-This-Site
-date: 2020-02-01T05:00:00.000Z
+date: 2020-03-02T05:00:00.000Z
 title: How I Built This Site
 image: manley-portfolio/src/images/gatsbyNetlify.png
 ---
