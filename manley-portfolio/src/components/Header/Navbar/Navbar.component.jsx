@@ -22,15 +22,15 @@ export const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", listener)
     }
-  },[])
+  },[]);
 
-  const handleMediaQueryChange = mediaQuery => {
+  const handleMediaQueryChange = (mediaQuery) => {
     if (mediaQuery.matches) {
       setIsSmallScreen(true)
     } else {
       setIsSmallScreen(false)
     }
-  }
+  };
 
   const largeScreen = () => (
     <div className="">

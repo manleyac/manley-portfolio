@@ -1,5 +1,6 @@
 import React from "react"
 import reader from "../../images/reader.svg"
+import Img from "gatsby-image";
 import "./Intro.styles.css"
 
 export const Intro = () => (
@@ -8,6 +9,6 @@ export const Intro = () => (
       <p className="introP">Hi! My name is Andrew, and I’m a web developer!</p>
     </div>
 
-    <img className="coderImg" src={reader} />
+    <Img className="coderImg" fixed={reader} loading="eager" alt="coder"/>
   </div>
 )

@@ -52,7 +52,6 @@ export const Projects = () => {
   }
 
   projectList.sort(compare)
-  console.log(projectList)
   return (
     <div name="projects">
       <h1>Projects</h1>

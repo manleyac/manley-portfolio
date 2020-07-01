@@ -6,10 +6,20 @@
 
 module.exports = {
   siteMetadata: {
+    title: `Manley Web Dev`,
+    description: `Hi, my name is Andrew, and I'm a web developer!`,
+    author: `Andrew Manley`,
     icon: `./public/favicon_io-1/favicon-32x32.png`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        
+        trackingId: "UA-171534604-1",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,6 +42,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
   ],
