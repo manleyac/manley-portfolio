@@ -1,6 +1,7 @@
 ---
 title: Pokemon Guide
 image: static/pikachu.png
+project-image: static/pikachu.png
 deploy: https://manleyac.github.io/pokemon-app/
 repo: https://github.com/manleyac/pokemon-app
 tags:
